@@ -15,7 +15,7 @@ Based on Minami, a clean, responsive documentation template theme for JSDoc 3 - 
 ## Install
 
 ```bash
-$ npm install --save-dev jsdoc-graph
+$ npm install --save-dev minami
 ```
 
 
