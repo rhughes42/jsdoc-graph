@@ -1,6 +1,6 @@
-# Minami
+# Graph Technologies JSDoc Templates
 
-A clean, responsive documentation template theme for JSDoc 3.
+Based on Minami, this is a clean, responsive documentation template theme for JSDoc 3 configured for Graph Technologies usage.
 
 ![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
 
@@ -15,7 +15,7 @@ A clean, responsive documentation template theme for JSDoc 3.
 ## Install
 
 ```bash
-$ npm install --save-dev minami
+$ npm install --save-dev jsdoc-graph
 ```
 
 
@@ -24,7 +24,7 @@ $ npm install --save-dev minami
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/minami
+$ jsdoc entry-file.js -t path/to/jsdoc
 ```
 
 
@@ -34,7 +34,7 @@ In your projects `package.json` file add a generate script:
 
 ```json
 "scripts": {
-  "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+  "generate-docs": "jsdoc --configure ./docs-template/.jsdoc.conf.json --verbose"
 }
 ```
 
@@ -42,7 +42,7 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/minami"
+  "template": "node_modules/jsdoc-graph"
 }
 ```
 
@@ -74,7 +74,7 @@ In your `.jsdoc.json` file, add a template option.
         "encoding": "utf8",
         "private": true,
         "recurse": true,
-        "template": "./node_modules/minami"
+        "template": "./docs-template/jsdoc-graph"
     }
 }
 ```
