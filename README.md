@@ -1,6 +1,6 @@
 # Graph Technologies JSDoc Templates
 
-Based on Minami, this is a clean, responsive documentation template theme for JSDoc 3 configured for Graph Technologies usage.
+Based on Minami, a clean, responsive documentation template theme for JSDoc 3 - this template is further configured for Graph Technologies usage.
 
 ![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
 
@@ -56,9 +56,16 @@ In your `.jsdoc.json` file, add a template option.
         "dictionaries": ["jsdoc"]
     },
     "source": {
-        "include": ["lib", "package.json", "README.md"],
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
+        "include": [
+      			"./src",
+      			"package.json",
+      			"README.md"
+    		],
+    		"exclude": [
+    			  "node_modules"
+    		],
+    		"includePattern": ".+\\.js(doc|x)?$",
+    		"excludePattern": "(node_modules/|docs)"
     },
     "plugins": [
         "plugins/markdown"
