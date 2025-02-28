@@ -80,8 +80,3 @@ In your `.jsdoc.json` file, add a template option.
 ```
 
 Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
-
-
-## License
-
-Licensed under the Apache2 license.
